@@ -1,0 +1,10 @@
+version: "2.17"
+
+services:
+  apache:
+    image: httpd:latest
+    container_name: my-apache-dio
+    ports:
+      - '8080:80'
+    volumes:
+      - ./app:/usr/local/apache2/htdocs
